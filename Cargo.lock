@@ -4788,7 +4788,7 @@ dependencies = [
  "reedline",
  "rstest",
  "strum",
- "sysinfo",
+ "sysinfo 0.40.1",
  "tempfile",
  "unicode-segmentation",
  "unicode-width 0.2.2",
@@ -4983,7 +4983,7 @@ dependencies = [
  "serde_urlencoded",
  "sha2 0.11.0",
  "strum",
- "sysinfo",
+ "sysinfo 0.40.1",
  "tabled",
  "tempfile",
  "toml",
@@ -5415,7 +5415,7 @@ dependencies = [
  "ntapi",
  "nu-utils",
  "procfs",
- "sysinfo",
+ "sysinfo 0.40.1",
  "uucore",
  "web-time",
  "windows 0.62.2",
@@ -7230,7 +7230,7 @@ dependencies = [
  "serde_stacker",
  "slotmap",
  "stacker",
- "sysinfo",
+ "sysinfo 0.39.6",
  "tokio",
  "uuid",
  "version_check",
@@ -9151,6 +9151,20 @@ name = "sysinfo"
 version = "0.39.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d2071df9448915b71c4fe6d25deaf1c22f12bd234f01540b77312bb8e41361e6"
+dependencies = [
+ "libc",
+ "memchr",
+ "ntapi",
+ "objc2-core-foundation",
+ "objc2-io-kit",
+ "windows 0.62.2",
+]
+
+[[package]]
+name = "sysinfo"
+version = "0.40.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0e8a3edbe0394ce115f3917a00349dd242be09eb5a091ed509eaf67b55cfb8a8"
 dependencies = [
  "libc",
  "memchr",
