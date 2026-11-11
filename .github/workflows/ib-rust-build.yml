@@ -112,7 +112,7 @@ jobs:
       - name: Upload build log
         if: always()
         continue-on-error: true
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ib-rust-build-${{ github.run_number }}-attempt-${{ github.run_attempt }}
           path: /tmp/ibbuild/*
