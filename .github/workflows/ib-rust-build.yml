@@ -32,7 +32,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: ib-rust-build
+  group: ib-rust-build-${{ github.run_id }}
   cancel-in-progress: false
 
 env:
